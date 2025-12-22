@@ -1,0 +1,126 @@
+@font-face {
+        font-family: 'Idroid';
+        src: url(fontes/idroid.otf);
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #c5ebd6;
+    margin: 0px;
+    
+}
+
+header {
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    background-image: linear-gradient(to top, #1E6B40, #37C777);
+    box-shadow: 0px 1px 5px 0px black;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+}
+
+nav#menu a {
+    color: #C5EBD6;
+    text-decoration: none;
+    text-indent: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+nav#menu a:hover {
+    background-color: #2F9C62;
+    color:#1E5F3B;
+    border-radius: 10px;
+    width: 10px;
+}
+
+main {
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 1px 1px 20px 0.350px black;
+    padding: 1px 1px 20px 1px;
+    margin: 0px auto;
+    display: grid;
+    place-content: center;
+    width: min-content;
+}
+
+main h1 {
+    font-family: 'Idroid';
+    color: #1E5F3B;
+    padding-left: 10px;
+}
+
+div {
+    border-radius: 10px;
+    background-color: #C5EBD6;
+    box-shadow: 1px 1px 6px 0px black;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+
+span.doces {
+    text-decoration: underline;
+}
+
+aside {
+    display: block;
+}
+
+h2 {
+    font-family: 'Idroid';
+    color: #2B6947;
+    background-image: linear-gradient(to right, #8CE3B4, #DFF4E8, white);
+    padding-left: 20px;
+}
+
+h3 {
+    background-color: #2FA866;
+    color: white;
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px;
+    padding: 10px;
+}
+
+p {
+    font-family: sans-serif;
+    text-indent: 30px;
+    text-align: justify;
+    padding: 10px;
+}
+
+span {
+    color: #3B7755;
+    font-weight: bold;
+}
+
+span.link {
+    background-color: #8CE3B4;
+}
+
+span.link::after  {
+    content: ' 🔗 '
+}
+
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    background-color:#1A5C38;
+    color: white;
+    justify-items: center;
+}

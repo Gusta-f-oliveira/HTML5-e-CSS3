@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degradiente em CSS</title>
+    <style>
+        * { /* Configuração global */
+            height: 100%; /* Para implementar degradê na vertical */
+        }
+        
+        body {
+            background-image: linear-gradient(to right, #3198E2 1%, #6D59C0, #B93590, #E33F5F, #FDD579 75%); /* Valores ...-gradient permite multiplas cores, para formar degradê e escolhe o formato (vertical, horizontal ou em graus) */
+            background-attachment: fixed; /* Formata o degradê em toda a página */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    
+</body>
+</html>

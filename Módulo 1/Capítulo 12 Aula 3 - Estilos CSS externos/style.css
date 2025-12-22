@@ -1,0 +1,20 @@
+@charset "UTF8"; /* Define uma regra no css, indicando que esse arquivo possui compatibilidade com todos símbolos, acentuções, emojis, etc (não obrigatório) */
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: maroon;
+    background-color: goldenrod;
+}
+
+h2 {
+    color: darkred;
+}
+
+p {
+    text-align: justify;
+}

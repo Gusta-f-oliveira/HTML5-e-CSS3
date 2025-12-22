@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador.</p>
+    
+    <picture> <!-- Serve para oferecer múltiplas fontes de imagem, permitindo que o navegador escolha a melhor versão (formato, tamanho ou resolução) para o dispositivo do usuário -->
+        <source media="(max-width: 725px)" srcset="imagens/foto-p.png" type="image/png"> <!-- é recomendado usar pelo menos 25px a mais que o tamanho da imagem -->
+        <source media="(max-width: 1025px)" srcset="imagens/foto-m.png" type="image/png"> <!-- A tag <source> serve para definir múltiplos recursos de mídia (áudio, vídeo, imagens) para os elementos pais <audio>, <video> ou <picture> 
+        O atributo "media" define o tamanho mínimo ou máximo do tamanho da tela para que seja feito a troca por outra imagem
+        O atributo "srcset" define um conjunto de imagens com diferentes tamanhos, para que o navegador escolha a mais adequada para o tamanho da tela do usuário -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador.</p>
+    
+    <picture> <!-- Serve para oferecer múltiplas fontes de imagem, permitindo que o navegador escolha a melhor versão (formato, tamanho ou resolução) para o dispositivo do usuário -->
+        <source media="(max-width: 725px)" srcset="imagens/foto-p.png" type="image/png"> <!-- é recomendado usar pelo menos 25px a mais que o tamanho da imagem -->
+        <source media="(max-width: 1025px)" srcset="imagens/foto-m.png" type="image/png"> <!-- A tag <source> serve para definir múltiplos recursos de mídia (áudio, vídeo, imagens) para os elementos pais <audio>, <video> ou <picture> 
+        O atributo "media" define o tamanho mínimo ou máximo do tamanho da tela para que seja feito a troca por outra imagem
+        O atributo "srcset" define um conjunto de imagens com diferentes tamanhos, para que o navegador escolha a mais adequada para o tamanho da tela do usuário -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Aúdio</h1>
+    <p>Vamos aprender a reproduzir aúdios no HTML5.</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mp3"> <!-- É possível colocar o mesmo aúdio em diferentes formatos, o navegador irá escolher a mais adequada. Por exemplo:
+        <source src="midia/guanacast-33.aac" type="audio/aac">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        
+        Os formatos de arquivos de aúdio recomendados são MP3 (suportado pela maioria dos navegadores), AAC (melhor qualidade e mais leve que o MP3) e OGG (código aberto, ótimo para Firefox e Opera)-->
+        <p>Infelizmente não foi possível reproduzir o aúdio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!-- Essa mensagem será exibida caso seja possível reproduzir o aúdio -->
+    </audio> <!-- O atributo "preload" serve para sugerir ao navegador que carregue um recurso com antecedência.
+    Com o valor "auto" (valor padrão) definido, o aúdio só será reproduzido após ser totalmente carregado
+    Com o valor "metadata" baixa apenas metadados (duração, tamanho, etc) e um pequeno pedaçado para início rápido
+    Com o valor "none", o arquivo só será baixado quando o usuário clicar em reproduzir 
+    Não é mais possível utilizar o atributo "autoplay" nos navegadores atuais, por conta das políticas de navegadores modernos, que bloqueiam a reprodução automática de mídia com som para melhorar a experiência do usuário e evitar consumo excessivo de dados -->
+</body>
+</html>
