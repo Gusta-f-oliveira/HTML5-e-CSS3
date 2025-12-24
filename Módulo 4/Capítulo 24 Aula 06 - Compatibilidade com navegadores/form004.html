@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Estudar mais sobre RegEx -->
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset> <!-- Agrupa campos relacionados dentro de um formulário -->
+            <legend>Dados Pessoais</legend> <!-- Fornecer um título ou rótulo descritivo para um grupo de campos de formulário relacionados -->
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" placeholder="Nome Completo" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="ex: seunome@gmail.com">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="ex: (11) 12345-6789" required>
+                <!-- O atributo 'pattern' define uma expressão regular (regex) para validar o formato dos dados inseridos em campos de formulário -->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
