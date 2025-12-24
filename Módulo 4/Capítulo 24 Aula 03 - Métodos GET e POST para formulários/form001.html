@@ -12,8 +12,9 @@
 </head>
 <body>
     <h1>Meu primerio formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <!-- O atributo 'action' define para qual URL os dados do formulário serão enviados quando ele for submetido;
+        O atributo 'method' define como os dados inseridos pelo usuário serão enviados ao servidor, especificando o método HTTP a ser usado. O método GET anexa os dados à URL (visível na barra de endereços, bom para buscas e dados não sensíveis), enquanto POST envia os dados no corpo da requisição HTTP (mais seguro, ideal para senhas e dados grandes);
         O atributo 'autocomplete'controla se o navegador deve autocompletar os campos de um formulário com base em valores que o usuário já inseriu -->
         <p><label for="inome">Nome:</label>
             <!-- O atributo 'for' serve para associar um elemento <label> (rótulo) a um controle de formulário específico, usando o id desse controle como valor do for -->
