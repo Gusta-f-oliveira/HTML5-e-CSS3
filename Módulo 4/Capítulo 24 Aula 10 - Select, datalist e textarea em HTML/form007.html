@@ -12,7 +12,8 @@
             <label for="iest">Estado: </label>
             <select name="est" id="iest">
                 <!-- A tag <select> cria um menu suspenso em um formulário, permitindo ao usuário escolher uma ou mais opções de uma lista pré-definida -->
-                <option value="" selected>--- Escolha ---</option>
+                <option value="" disabled selected>--- Escolha ---</option>
+                <!-- O atributo 'disabled' é um valor booleano que desabilita um elemento de formulário -->
                 <optgroup label="Região Sudeste">
                     <!-- A tag <optgroup> serve para agrupar opções relacionadas dentro de uma lista suspensa-->
                     <option value="MG">Minas Gerais</option>
@@ -44,9 +45,10 @@
 
         <p>
             <label for="imsg">Mensagem: </label> <br>
-            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
-            <!-- A tag <textarea> cria um campo de entrada de texto de múltiplas linhas em formulários
-            Os atributos 'cols' e 'rows' definem as dimensões visíveis da caixa de texto
+            <textarea name="msg" id="imsg" cols="30" rows="10" style="resize: none" placeholder="Sua mensagem aqui..."></textarea>
+            <!-- A propriedade 'resize' permite que o usuário redimensione ou não um elemento;
+            A tag <textarea> cria um campo de entrada de texto de múltiplas linhas em formulários
+            Os atributos 'cols' e 'rows' definem as dimensões visíveis da caixa de texto;
             Não é recomendado usar o método 'GET' para <textarea> pois, todos os dados, são enviados na URL, o que é inadequado para textos longos ou confidenciais devido ao limite de tamanho da URL e à visibilidade dos dados -->
         </p>
         
