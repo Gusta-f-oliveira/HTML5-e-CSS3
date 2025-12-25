@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around; /* Controla como os itens de um contêiner flexível (ou de grade) são distribuídos e alinhados ao longo do eixo principal (horizontal por padrão, mas muda com flex-direction), definindo espaçamento e posição (início, fim, centro, ou espaçamento entre/ao redor) para otimizar o layout quando os itens não preenchem todo o espaço disponível */
+            align-items: center; /* É usada em contêineres flexbox e grid para definir como os itens são alinhados ao longo do eixo transversal */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
