@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.caixa1 {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* As propriedades 'grid-row-start' e 'grid-row-end' em CSS definem onde um item da grade começa e termina ao longo das linhas da grade */
+    grid-column-start: 1;
+    grid-column-end: -1; /* ou 5 */
+    /* 'grid-column-start' e 'grid-column-end' são propriedades CSS do Grid Layout que controlam a posição e o tamanho de um item na grade, definindo onde uma coluna começa e onde ela termina */
+}
+
+.caixa2 {
+    background-color: green;
+    grid-row-start: 2;
+    grid-row-end: -1; /* ou 4 */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.caixa3 {
+    background-color: blue;
+    grid-row-start: 2;
+    grid-row-end: -1; /* ou 4 */
+    grid-column-start: 3;
+    grid-column-end: -1; /* ou 5 */
+}
