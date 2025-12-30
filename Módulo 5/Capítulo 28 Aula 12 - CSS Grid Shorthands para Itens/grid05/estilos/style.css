@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.caixa1 {
+    background-color: red;
+    grid-row: 1/ span 1; /* A propriedade 'grid-row' é um shorthand usado em itens de grade para controlar sua posição e tamanho nas linhas do layout Grid, definindo onde um item começa e termina no eixo vertical;
+    O valor 'span' define a quantidade de linhas ou colunas que um item de grade deve atravessar (ocupar) */
+    grid-column: 1 / span 4; /* A propriedade 'grid-column' é um shorhand usado em itens de um layout Grid para controlar sua posição e tamanho horizontal, definindo em quais linhas de grade um item deve começar e terminar */
+}
+
+.caixa2 {
+    background-color: green;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+}
+
+.caixa3 {
+    background-color: blue;
+    grid-row: 2 / span 2;
+    grid-column: 3 / span 2;
+}
